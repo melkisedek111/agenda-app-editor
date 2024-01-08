@@ -7,7 +7,8 @@
     "start": "node build/server.ts",
     "dev": "nodemon --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "server": "node build/server.js"
   },
   "keywords": [],
   "author": "",
