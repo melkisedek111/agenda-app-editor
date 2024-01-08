@@ -1,5 +1,4 @@
 import { TAgendaItem } from '@/components/AgendaTable';
-import { fetchApi } from '@/utils/fetch.util';
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 
 
