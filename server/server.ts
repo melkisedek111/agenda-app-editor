@@ -13,7 +13,7 @@ const PORT = 4000;
 
 app.use(
 	cors({
-		origin: process.env.CLIENT_URL,
+		origin: "*",
 	})
 );
 app.use(express.json());
