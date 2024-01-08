@@ -13,7 +13,7 @@ const PORT = 4000;
 
 app.use(
 	cors({
-		origin: "*",
+		origin: process.env.CLIENT_URL,
 	})
 );
 app.use(express.json());
@@ -21,7 +21,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/agenda", agendaRouter);
-console.log(process.env.CLIENT_URL)
+
 const server = app.listen(PORT, () => {
 	console.log(`Server is running on port ${PORT}`);
 });

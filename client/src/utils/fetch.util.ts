@@ -5,7 +5,6 @@ export const fetchApi = (endpoint: string, props: any) => {
         headers: {
             'content-type': 'application/json;charset=UTF-8',
         }, 
-        credentials: 'include',
         ...props
     })
 }
